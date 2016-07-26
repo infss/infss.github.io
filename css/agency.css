@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-xl {
 	padding: 20px 40px;
-	border-color: #595858;
+	border-color: #3e6bdb;
 	border-radius: 3px;
 	text-transform: uppercase;
 	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-default .nav li a:hover {
 	outline: 0;
-	color: #777;
+	color: #091b63;
 }
 
 .navbar-default .nav li a:focus {
@@ -182,6 +182,10 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 0;
 	color: #fff;
 	background-color: #3E6BDB;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: #FFF9B1
 }
 
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
@@ -304,7 +308,7 @@ section h3.section-subheading {
 
 @media ( min-width :768px) {
 	section {
-		padding: 100px 0;
+		padding: 100px 0 50px;
 	}
 }
 
@@ -666,6 +670,14 @@ footer ul.quicklinks {
 	text-transform: none;
 	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 40px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
 }
 
 ul.social-buttons {
@@ -1377,4 +1389,26 @@ option {
 
 .form-horizontal .has-feedback .form-control-feedback {
     right: -15px;
+}
+
+.thanks {
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	line-height: 50px;
+}
+.thanks .intro-heading {
+	text-align: center;
+	color: #333;
+	padding-top: 10%;
+}
+nav.thanks {
+    background-color: rgba(72, 70, 70, 0.9);
+    font-size: 10px;
+    padding: 10px 0;    
+}
+
+.has-error .help-block {
+	color: #ff0000;
+	font-weight: bold;
+	font-size: 13px;
 }

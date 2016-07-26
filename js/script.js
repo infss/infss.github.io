@@ -56,7 +56,7 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 	
-	$('#contact_form').bootstrapValidator({
+	$('#entryForm, #contactForm').bootstrapValidator({
     	// To use feedback icons, ensure that
     	// you use Bootstrap v3.1.0 or later
     	feedbackIcons : {
@@ -75,14 +75,14 @@ $(document).ready(function() {
     		name : {
     			validators : {
     				notEmpty : {
-    					message : '氏名を入力してください'
+    					message : '入力必須項目です'
     				}
     			}
     		},
     		nameKana : {
     			validators : {
     				notEmpty : {
-    					message : 'フリガナを入力してください'
+    					message : '入力必須項目です'
     				}
     			}
     		},
@@ -94,56 +94,56 @@ $(document).ready(function() {
               message : '生年月日は8桁で入力してください'
             },
             notEmpty : {
-              message : '生年月日を入力してください'
+              message : '入力必須項目です'
             }
           }
         },
         zipCode : {
           validators : {
             notEmpty : {
-              message : '郵便番号を入力してください'
+              message : '入力必須項目です'
             }
           }
         },
         state : {
           validators : {
             notEmpty : {
-              message : '都道府県を選択してください'
+              message : '入力必須項目です'
             }
           }
         },
         city : {
           validators : {
             notEmpty : {
-              message : '市区町村を入力してください'
+              message : '入力必須項目です'
             }
           }
         },
         address : {
           validators : {
             notEmpty : {
-              message : '町名番地を入力してください'
+              message : '入力必須項目です'
             }
           }
         },
         building : {
           validators : {
             notEmpty : {
-              message : '建物名を入力してください'
+              message : '入力必須項目です'
             }
           }
         },
         phone : {
           validators : {
             notEmpty : {
-              message : '連絡先(TEL)を入力してください'
+              message : '入力必須項目です'
             }
           }
         },
         email : {
     			validators : {
     				notEmpty : {
-    					message : 'emailを入力してください'
+    					message : '入力必須項目です'
     				},
     				emailAddress : {
     					message : 'emailの形式が正しくありません'
@@ -157,34 +157,22 @@ $(document).ready(function() {
     					message : '500文字以内で入力してください'
     				}
     			}
-    		}
+    		},
+        message : {
+          validators : {
+            notEmpty : {
+              message : '入力必須項目です'
+            },
+            stringLength : {
+              max : 500,
+              message : '500文字以内で入力してください'
+            }
+          }
+        }
     	}
-    }).on(
-    'success.form.bv',
-    function(e) {
-    	$('#success_message').slideDown({
-    		opacity : "show"
-    	}, "slow") // Do something ...
-    	$('#contact_form').data('bootstrapValidator').resetForm();
-    
-    	// Prevent form submission
-    	e.preventDefault();
-    
-    	// Get the form instance
-    	var $form = $(e.target);
-    
-    	// Get the BootstrapValidator instance
-    	var bv = $form.data('bootstrapValidator');
-    
-    	// Use Ajax to submit form data
-    	$.post($form.attr('action'),
-    	  $form.serialize(), function(result) {
-    	    console.log(result);
-    	  }, 'json');
     });
 });
 
-// Portfolio slider setup
 jQuery(document).ready(function($) {
 	var sliderProps = {
 		autoScaleSlider : true,
