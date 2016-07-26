@@ -133,7 +133,7 @@ $(document).ready(function() {
             }
           }
         },
-        連絡先TEL : {
+        連絡先(TEL) : {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
