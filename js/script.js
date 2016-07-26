@@ -65,28 +65,28 @@ $(document).ready(function() {
     		validating : 'glyphicon glyphicon-refresh'
     	},
     	fields : {
-    	  job : {
+    	  希望職種 : {
           validators : {
             notEmpty : {
               message : '希望職種を選択してください'
             }
           }
         },
-    		name : {
+        お名前 : {
     			validators : {
     				notEmpty : {
     					message : '入力必須項目です'
     				}
     			}
     		},
-    		nameKana : {
+    		フリガナ : {
     			validators : {
     				notEmpty : {
     					message : '入力必須項目です'
     				}
     			}
     		},
-    		birthday : {
+    		生年月日 : {
           validators : {
             stringLength : {
               min : 8,
@@ -98,59 +98,59 @@ $(document).ready(function() {
             }
           }
         },
-        zipCode : {
+        郵便番号 : {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
             }
           }
         },
-        state : {
+        都道府県 : {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
             }
           }
         },
-        city : {
+        市区町村 : {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
             }
           }
         },
-        address : {
+        町名番地 : {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
             }
           }
         },
-        building : {
+        建物名 : {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
             }
           }
         },
-        phone : {
+        連絡先(TEL) : {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
             }
           }
         },
-        email : {
+        メールアドレス : {
     			validators : {
     				notEmpty : {
     					message : '入力必須項目です'
     				},
     				emailAddress : {
-    					message : 'emailの形式が正しくありません'
+    					message : 'メールアドレスの形式が正しくありません'
     				}
     			}
     		},
-    		comment : {
+    		質問事項 : {
     			validators : {
     				stringLength : {
     					max : 500,
@@ -158,7 +158,7 @@ $(document).ready(function() {
     				}
     			}
     		},
-        message : {
+    		お問い合わせ内容 : {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
