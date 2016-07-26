@@ -18,7 +18,7 @@ body {
 }
 
 p {
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.75;
 }
 
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-xl {
 	padding: 20px 40px;
-	border-color: #3E6BDB;
+	border-color: #595858;
 	border-radius: 3px;
 	text-transform: uppercase;
 	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -124,8 +124,8 @@ h1, h2, h3, h4, h5, h6 {
 	.btn-xl[disabled]:focus, fieldset[disabled] .btn-xl:focus, .btn-xl.disabled:active,
 	.btn-xl[disabled]:active, fieldset[disabled] .btn-xl:active, .btn-xl.disabled.active,
 	.btn-xl[disabled].active, fieldset[disabled] .btn-xl.active {
-	border-color: #fed136;
-	background-color: #fed136;
+	border-color: #595858;
+	background-color: #3E6BDB;
 }
 
 .btn-xl .badge {
@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.navbar-default.navbar-shrink {
 		padding: 10px 0;
-		background-color: rgba(72,70,70,0.9);
+		background-color: rgba(72, 70, 70, 0.9);
 	}
 	.navbar-default.navbar-shrink .navbar-brand {
 		font-size: 1.3em;
@@ -221,7 +221,7 @@ header {
 	text-align: center;
 	color: #fff;
 	background-attachment: scroll;
-	background-image: url(http://www.publicdomainpictures.net/pictures/170000/velka/der-denker.jpg);
+	background-image: url(../img/header-bg.jpg);
 	background-position: center center;
 	background-repeat: none;
 	-webkit-background-size: cover;
@@ -393,16 +393,12 @@ section h3.section-subheading {
 	z-index: 2;
 }
 
-@media
-(
-min-width
-:767px)
-{
-.portfolio-item {
-	margin: 0 0 30px;
+@media ( min-width :767px) {
+	.portfolio-item {
+		margin: 0 0 30px;
+	}
 }
 
-}
 .timeline {
 	position: relative;
 	padding: 0;
@@ -685,7 +681,7 @@ ul.social-buttons li a {
 	line-height: 40px;
 	outline: 0;
 	color: #fff;
-	background-color: #222;
+	background-color: #595858;
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
 	transition: all .3s;
@@ -794,10 +790,10 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 
 .portfolio-modal .row {
 	margin-bottom: 10px;
-    border-bottom-color: black;
-    border-bottom-width: 1px;
-    border-bottom-style: dashed;
-    padding-bottom: 10px;
+	border-bottom-color: black;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	padding-bottom: 10px;
 }
 
 .portfolio-modal .btn {
@@ -1197,25 +1193,11 @@ body {
 	z-index: 10;
 }
 
-.projectThumbnailHover h4 {
-	font-family: Georgia, Arial, sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 24px;
-	line-height: 1.2;
-	letter-spacing: -0.05em;
-	text-rendering: auto;
-	color: #fff;
-	position: absolute;
-	margin-top: 40px;
-	display: none;
-}
-
 .projectThumbnailHover h5 {
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.5;
 	letter-spacing: 0;
 	text-rendering: auto;
@@ -1383,4 +1365,16 @@ body {
 
 .fa-9x {
 	font-size: 9em !important;
+}
+
+#success_message {
+	display: none;
+}
+
+option {
+	color: #b0b0b0;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+    right: -15px;
 }

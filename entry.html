@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>InfSystemService LLC.</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="css/agency.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body id="page-top" class="index">
+  <div class="container">
+    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+      <fieldset>
+        <h2 style="text-align: center;">エントリーフォーム</h2>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">希望職種</label>
+          <div class="col-md-4 selectContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-list"></i>
+              </span>
+              <select name="job" class="form-control selectpicker">
+                <option value="">選択してください</option>
+                <option>システムエンジニア・プログラマ</option>
+                <option>ネットワークエンジニア</option>
+                <option>営業職・事務職</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">氏名</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-user"></i>
+              </span>
+              <input name="name" placeholder="氏名" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">フリガナ</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-user"></i>
+              </span>
+              <input name="nameKana" placeholder="フリガナ" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">生年月日</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-gift"></i>
+              </span>
+              <input name="birthday" placeholder="19801201" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">性別</label>
+          <div class="col-md-4">
+            <div class="radio">
+              <label>
+                <input type="radio" name="sex" value="man" /> 男
+              </label>
+              <label>
+                <input type="radio" name="sex" value="woman" /> 女
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">郵便番号</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-home"></i>
+              </span>
+              <input name="zipCode" placeholder="150-0045" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">都道府県</label>
+          <div class="col-md-4 selectContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-list"></i>
+              </span>
+              <select name="state" class="form-control selectpicker">
+                <option value="">選択してください</option>
+                <option value="北海道">北海道</option>
+                <option value="青森県">青森県</option>
+                <option value="岩手県">岩手県</option>
+                <option value="宮城県">宮城県</option>
+                <option value="秋田県">秋田県</option>
+                <option value="山形県">山形県</option>
+                <option value="福島県">福島県</option>
+                <option value="茨城県">茨城県</option>
+                <option value="栃木県">栃木県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都">東京都</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="新潟県">新潟県</option>
+                <option value="富山県">富山県</option>
+                <option value="石川県">石川県</option>
+                <option value="福井県">福井県</option>
+                <option value="山梨県">山梨県</option>
+                <option value="長野県">長野県</option>
+                <option value="岐阜県">岐阜県</option>
+                <option value="静岡県">静岡県</option>
+                <option value="愛知県">愛知県</option>
+                <option value="三重県">三重県</option>
+                <option value="滋賀県">滋賀県</option>
+                <option value="京都府">京都府</option>
+                <option value="大阪府">大阪府</option>
+                <option value="兵庫県">兵庫県</option>
+                <option value="奈良県">奈良県</option>
+                <option value="和歌山県">和歌山県</option>
+                <option value="鳥取県">鳥取県</option>
+                <option value="島根県">島根県</option>
+                <option value="岡山県">岡山県</option>
+                <option value="広島県">広島県</option>
+                <option value="山口県">山口県</option>
+                <option value="徳島県">徳島県</option>
+                <option value="香川県">香川県</option>
+                <option value="愛媛県">愛媛県</option>
+                <option value="高知県">高知県</option>
+                <option value="福岡県">福岡県</option>
+                <option value="佐賀県">佐賀県</option>
+                <option value="長崎県">長崎県</option>
+                <option value="熊本県">熊本県</option>
+                <option value="大分県">大分県</option>
+                <option value="宮崎県">宮崎県</option>
+                <option value="鹿児島県">鹿児島県</option>
+                <option value="沖縄県">沖縄県</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">市区町村</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-map-marker"></i>
+              </span>
+              <input name="city" placeholder="渋谷区" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">町名番地</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-map-marker"></i>
+              </span>
+              <input name="address" placeholder="神泉町10-17" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">建物名</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-map-marker"></i>
+              </span>
+              <input name="building" placeholder="コルベール神泉303号" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">連絡先(TEL)</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-earphone"></i>
+              </span>
+              <input name="phone" placeholder="03-6455-3483" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label">E-Mail</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-envelope"></i>
+              </span>
+              <input name="email" placeholder="E-Mail" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">質問事項</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+              </span>
+              <textarea class="form-control" name="comment" placeholder="質問事項"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-xl col-md-12">
+              <span class="glyphicon glyphicon-send"></span>
+              送信する
+            </button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/cbpAnimatedHeader.min.js"></script>
+  <script src="js/bootstrapValidator.js"></script>
+  <script src="js/agency.js"></script>
+  <script src="js/modernizr.min.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
