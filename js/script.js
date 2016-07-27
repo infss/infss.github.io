@@ -38,8 +38,28 @@ $(document).ready(function() {
 							left : '0',
 							opacity : 0
 						}, 0);
-			})
-	
+			});
+
+	$(".projectThumbnail").bind( 'touchstart', function(){
+      $(this).children(".projectThumbnailHover").fadeIn(300);
+      $(this).children(".projectThumbnailHover").find("h4").css("display", "block");
+      $(this).children(".projectThumbnailHover").find("h4").css("opacity", "0");
+      $(this).children(".projectThumbnailHover").find("h4").delay(200).animate({opacity : 1}, 200);
+      $(this).children(".projectThumbnailHover").find("h5").css("display", "block");
+      $(this).children(".projectThumbnailHover").find("h5").css("opacity", "0");
+      $(this).children(".projectThumbnailHover").find("h5").delay(350).animate({opacity : 1}, 200);
+	  }).bind( 'touchend', function(){
+      $(this).children(".projectThumbnailHover").fadeOut(200);
+      $(this).children(".projectThumbnailHover").find("h4").animate({
+            left : '0',
+            opacity : 0
+          }, 0);
+      $(this).children(".projectThumbnailHover").find("h5").animate({
+            left : '0',
+            opacity : 0
+          }, 0);
+	  });
+
 	// Hide hover effect on touch devices
 	if (Modernizr.touch) {
 		$(".projectThumbnailHover").css("display", "none");
@@ -95,6 +115,17 @@ $(document).ready(function() {
             },
             notEmpty : {
               message : '入力必須項目です'
+            },
+            regexp : {
+              message: '生年月日は整数8桁で入力してください',
+              regexp: /^\d{8}$/
+            }
+          }
+        },
+        性別 : {
+          validators : {
+            notEmpty : {
+              message : '入力必須項目です'
             }
           }
         },
@@ -102,6 +133,10 @@ $(document).ready(function() {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
+            },
+            regexp : {
+              message: '郵便番号は数値で入力してください',
+              regexp: /^\d*$/
             }
           }
         },
@@ -137,6 +172,10 @@ $(document).ready(function() {
           validators : {
             notEmpty : {
               message : '入力必須項目です'
+            },
+            regexp : {
+              message: '連絡先TELの形式が正しくありません、[-]なしの数値で入力してください',
+              regexp: /^\d*$/
             }
           }
         },
