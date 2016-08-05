@@ -255,14 +255,14 @@ section {
 	padding: 100px 0;
 }
 
-section h2.section-heading {
+section h1.section-heading {
 	margin-top: 0;
 	margin-bottom: 15px;
 	font-size: 40px;
 	color: #423f3f;
 }
 
-section h3.section-subheading {
+section h2.section-subheading {
 	margin-bottom: 25px;
 	text-transform: none;
 	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial,
@@ -331,7 +331,7 @@ section h3.section-subheading {
 	margin-top: -75px;
 }
 
-.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h2,
 	.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4
 	{
 	margin: 0;
